@@ -2,7 +2,7 @@ import tempfile
 from pathlib import Path
 from unittest.case import TestCase
 
-from task_lib.locator import Loc
+from easy_stream.task_lib import Loc
 
 
 class TestLocatorSkip(TestCase):

@@ -4,8 +4,8 @@ import unittest
 
 from easy_kit.timing import time_func, TimingTestCase
 
-from concurrent_lib import parallel, serial, Task
-from concurrent_lib.runner import Runner
+from easy_stream.concurrent_lib import parallel, serial, Task
+from easy_stream.concurrent_lib.runner import Runner
 
 SLOW_TESTS = bool(os.getenv('SLOW_TESTS', False))
 

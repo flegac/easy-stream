@@ -2,7 +2,7 @@ from unittest.case import TestCase
 
 import pandas as pd
 
-from stream_lib.df_stream import DFStream
+from easy_stream.stream_lib.df_stream import DFStream
 
 
 class TestDfStream(TestCase):

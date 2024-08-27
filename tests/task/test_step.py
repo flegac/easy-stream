@@ -2,10 +2,10 @@ from pathlib import Path
 from unittest import TestCase
 
 from easy_kit.timing import timing, TimingTestCase
-from task_lib.context import Context
-from task_lib.step import Step
-from task_lib.tasks.groups.group import Group
-from task_lib.utils.sleep import Sleep
+from easy_stream.task_lib import Context
+from easy_stream.task_lib import Step
+from easy_stream.task_lib.tasks.groups.group import Group
+from easy_stream.task_lib.utils.sleep import Sleep
 
 
 def task_factory(label: str):

@@ -1,8 +1,8 @@
 from typing import Any
 from unittest.case import TestCase
 
-from task_lib.context import Context
-from task_lib.task_logger import TaskLogger
+from easy_stream.task_lib import Context
+from easy_stream.task_lib import TaskLogger
 
 
 class TestContextLogger(TestCase):

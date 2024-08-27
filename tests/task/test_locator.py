@@ -1,8 +1,8 @@
 from unittest import TestCase
 
-from task_lib.context import Context
-from task_lib.locator import Loc
-from task_lib.step import Step
+from easy_stream.task_lib import Context
+from easy_stream.task_lib import Loc
+from easy_stream.task_lib import Step
 
 
 def my_task(ctx: Context):

@@ -1,7 +1,7 @@
 from pathlib import Path
 from unittest.case import TestCase
 
-from stream_lib.stream import Stream
+from easy_stream.stream_lib.stream import Stream
 
 
 def int_stream(limit: int):

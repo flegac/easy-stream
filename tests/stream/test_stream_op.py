@@ -1,7 +1,8 @@
+import random
 from unittest.case import TestCase
 
-from stream_lib.stream import Stream
-from stream_lib.stream_op import Identity
+from easy_stream.stream_lib.stream import Stream
+from easy_stream.stream_lib.stream_op import Identity
 
 
 def int_stream(limit: int):
@@ -35,13 +36,15 @@ class TestStreamOperator(TestCase):
         self.assertEqual(actual, expected)
 
     def test_shuffle(self):
+        random.seed(0)
+        n = 4
         operator = Identity(int).shuffle()
-        s1 = Stream(int_stream(4))
+        s1 = Stream(int_stream(n))
 
         actual_set = set(operator(s1))
-        expected_set = set(range(4))
+        expected_set = set(range(n))
         actual_list = list(operator(s1))
-        expected_list = list(range(4))
+        expected_list = list(range(n))
 
         self.assertEqual(actual_set, expected_set)
         self.assertNotEqual(actual_list, expected_list)

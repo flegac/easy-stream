@@ -1,7 +1,7 @@
 from pathlib import Path
 from unittest import TestCase
 
-from task_lib.context import Context
+from easy_stream.task_lib import Context
 
 
 class TestContext(TestCase):
